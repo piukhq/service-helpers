@@ -30,7 +30,7 @@ def main(filename, kind):
 
     chrome_options = Options()
     chrome_options.add_argument("user-data-dir=selenium")
-    driver = webdriver.Chrome(executable_path="./chromedriver", options=chrome_options)
+    driver = webdriver.Chrome(executable_path="/opt/homebrew/bin/chromedriver", options=chrome_options)
 
     # Iterate over all scheme accounts, visit the filters page, refresh scheme account
 

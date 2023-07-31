@@ -17,9 +17,15 @@ requests = "^2.28.1"
 
 
 [tool.poetry.group.dev.dependencies]
-Flake8-pyproject = "^1.2.0"
-isort = "^5.10.1"
 black = "^22.10.0"
+ruff = "^0.0.280"
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+select = ["I001"]
+line-length = 120
 
 [build-system]
 requires = ["poetry-core"]
